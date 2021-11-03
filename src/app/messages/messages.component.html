@@ -1,0 +1,10 @@
+<div *ngIf="messageService.messages.length">
+  <h2>Messages</h2>
+  <button (click)="messageService.deleteAllMessages()">
+    Delete all messages
+  </button>
+  <hr />
+  <p *ngFor="let item of messageService.messages">
+    {{ item }}
+  </p>
+</div>

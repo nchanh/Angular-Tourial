@@ -1,0 +1,13 @@
+<div *ngIf="movie" class="movie-detail">
+  <div>
+    <label>Name</label>
+    <input type="text" [(ngModel)]="movie.name" />
+  </div>
+  <div>
+    <label>Release year</label>
+    <input type="text" [(ngModel)]="movie.release_year" />
+  </div>
+</div>
+<div>
+  <button (click)="goBack()">Go back</button>
+</div>

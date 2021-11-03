@@ -1,0 +1,34 @@
+.card-movie {
+  display: flex;
+}
+
+.movies {
+  background-color: rgb(212, 212, 212);
+  padding: 0.5em 1em 0.5em 1.5em;
+  margin: 1em;
+  max-width: 16em;
+}
+
+.movies .movieListItem {
+  cursor: pointer;
+  font-size: 1em;
+  background-color: rgb(56, 182, 111);
+  padding: 0.3em;
+  margin: 0.2em;
+  text-align: left;
+}
+
+.movies .movieListItem a {
+  text-decoration: none;
+  color: white;
+}
+
+.movies .movieListItem a:hover {
+  text-decoration: none;
+  color: rgb(255, 51, 0);
+}
+
+.selectedMoiveItem {
+  background-color: rgb(255, 166, 0) !important;
+  color: white;
+}

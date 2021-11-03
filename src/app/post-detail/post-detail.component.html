@@ -1,0 +1,45 @@
+<div class="container">
+  <div *ngIf="post" class="post-detail">
+    <div class="form-group">
+      <label>title</label>
+      <input type="text" [(ngModel)]="post.title" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label>short_description</label>
+      <input
+        type="text"
+        [(ngModel)]="post.short_description"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label>thumbnail</label>
+      <input type="text" [(ngModel)]="post.thumbnail" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label>content</label>
+      <textarea
+        [(ngModel)]="post.content"
+        cols="30"
+        rows="10"
+        class="form-control"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label>status</label>
+      <input type="text" [(ngModel)]="post.status" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label>category_id</label>
+      <input type="text" [(ngModel)]="post.category_id" class="form-control" />
+    </div>
+  </div>
+  <div>
+    <button (click)="updatePost()">Update</button>
+    <button (click)="goBack()">Go back</button>
+    <p></p>
+  </div>
+  <pre>
+    {{ post | json }}
+  </pre>
+</div>

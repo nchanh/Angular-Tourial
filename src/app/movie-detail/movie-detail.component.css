@@ -1,0 +1,8 @@
+.movie-detail {
+  background-color: rgb(255, 204, 255);
+  padding: 0.5em;
+  margin: 1em;
+  max-width: 16em;
+  text-align: left;
+  font-size: 0.875em;
+}

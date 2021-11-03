@@ -1,0 +1,40 @@
+<p>Movies works!</p>
+<p>Id: {{ movie.id }}</p>
+<p>Name: {{ movie.name | uppercase }}</p>
+<p>Release year: {{ movie.release_year }}</p>
+
+<div>
+  <input [ngModel]="movie.name" type="text" placeholder="input name" />
+</div>
+<div>
+  <input
+    [(ngModel)]="movie.release_year"
+    type="number"
+    placeholder="input release year"
+  />
+</div>
+
+<h2>My favortite movies</h2>
+<div class="card-movie">
+  <ol class="movies">
+    <!-- <li
+      class="movieListItem"
+      *ngFor="let item of movies"
+      (click)="onSelect(item)"
+      [class.selectedMoiveItem]="item === selectedMovie"
+    > -->
+    <li class="movieListItem" *ngFor="let item of movies">
+      <a routerLink="/movie/{{ item.id }}"
+        >{{ item.name }} ({{ item.release_year }})</a
+      >
+    </li>
+  </ol>
+  <app-messages></app-messages>
+  <div>
+    <ol *ngFor="let item of posts">
+      <li>{{ item.id }}</li>
+      <!-- <div *ngIf="item" [innerHTML]="toHTML(item.content)"></div> -->
+    </ol>
+  </div>
+  <!-- <app-movie-detail [movie]="selectedMovie"></app-movie-detail> -->
+</div>

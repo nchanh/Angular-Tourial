@@ -1,0 +1,14 @@
+.image-thumbnail {
+  width: 75px;
+  height: 75px;
+}
+
+.delete-item {
+  color: #000;
+  text-decoration: none;
+}
+
+.delete-item:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+}
