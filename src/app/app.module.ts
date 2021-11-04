@@ -15,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { PostService } from './post.service'
 import { PostComponent } from './post/post.component'
 import { PostDetailComponent } from './post-detail/post-detail.component';
-import { PostNewComponent } from './post-new/post-new.component'
+import { PostNewComponent } from './post-new/post-new.component';
+import { EditTableComponentComponent } from './edit-table-component/edit-table-component.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PostNewComponent } from './post-new/post-new.component'
     DashboardComponent,
     PostComponent,
     PostDetailComponent,
-    PostNewComponent
+    PostNewComponent,
+    EditTableComponentComponent
   ],
   imports: [
     BrowserModule,

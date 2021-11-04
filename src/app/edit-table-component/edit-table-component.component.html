@@ -1,0 +1,42 @@
+<div class="container mt-5">
+  <table class="table table-hover">
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr *ngFor="let row of backendData; index as index">
+      <td *ngIf="row.id === editRowId">
+        <input type="text" class="form-control form-control-sm" [(ngModel)]="row.name" />
+      </td>
+      <td *ngIf="row.id !== editRowId" (click)="edit(row)">
+        {{ row.name }}
+      </td>
+      <td *ngIf="row.id === editRowId">
+        <input type="text" class="form-control form-control-sm" [(ngModel)]="row.value" />
+      </td>
+      <td *ngIf="row.id !== editRowId" (click)="edit(row)">
+        {{ row.value }}
+      </td>
+      <td *ngIf="row.id === editRowId">
+        <select class="form-control form-control-sm" id="inputGroupSelect03">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </td>
+      <td *ngIf="row.id !== editRowId" (click)="edit(row)">
+        {{ row.description }}
+      </td>
+      <td *ngIf="row.id === editRowId">
+        <button (click)="save(row.id)">save</button>
+        <button (click)="cancel()">cancel</button>
+      </td>
+    </tr>
+  </table>
+  <pre>
+    {{ backendData | json }}
+  </pre>
+</div>
