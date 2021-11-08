@@ -8,6 +8,7 @@ import { PostComponent } from './post/post.component'
 import { PostDetailComponent } from './post-detail/post-detail.component'
 import { PostNewComponent } from './post-new/post-new.component'
 import { EditTableComponentComponent } from './edit-table-component/edit-table-component.component'
+import { AsynSearchComponent } from './asyn-search/asyn-search.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'posts', component: PostComponent },
   { path: 'post/:id', component: PostDetailComponent },
   { path: 'post-new', component: PostNewComponent },
-  { path: 'edit-table', component: EditTableComponentComponent }
+  { path: 'edit-table', component: EditTableComponentComponent },
+  { path: 'asyn-search', component: AsynSearchComponent }
 ]
 
 @NgModule({

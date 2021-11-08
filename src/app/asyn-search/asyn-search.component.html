@@ -1,0 +1,14 @@
+<div class="container">
+  <input
+    class="form-control"
+    #searchBox
+    (keyup)="search(searchBox.value)"
+    placeholder="Search..."
+    autocomplete="off"
+  />
+  <ul class="list-group" *ngIf="posts$">
+    <li class="list-group-item" *ngFor="let post of posts$ | async; let i = index">
+      {{ i + 1 }} - {{ post.title }}
+    </li>
+  </ul>
+</div>

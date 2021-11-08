@@ -16,7 +16,8 @@ import { PostService } from './post.service'
 import { PostComponent } from './post/post.component'
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostNewComponent } from './post-new/post-new.component';
-import { EditTableComponentComponent } from './edit-table-component/edit-table-component.component'
+import { EditTableComponentComponent } from './edit-table-component/edit-table-component.component';
+import { AsynSearchComponent } from './asyn-search/asyn-search.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EditTableComponentComponent } from './edit-table-component/edit-table-c
     PostComponent,
     PostDetailComponent,
     PostNewComponent,
-    EditTableComponentComponent
+    EditTableComponentComponent,
+    AsynSearchComponent
   ],
   imports: [
     BrowserModule,

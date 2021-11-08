@@ -10,10 +10,21 @@
 
 <!-- <app-movies></app-movies>
 <app-messages></app-messages> -->
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/movies">Movies</a>
-  <a routerLink="/posts">Posts</a>
-  <a routerLink="/edit-table">edit-table</a>
-</nav>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/movies">Movies</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/edit-table">edit-table</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/asyn-search">asyn-search</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>
